@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+    <title>MusicMaker</title>
+    <style> 
+    body::before {
+    content: '';
+    position: fixed; /* Фиксируем на одном месте */
+    left: 0; right: 0; /* Вся ширин */
+    top: 0; bottom: 0; /* Вся высота */
+    z-index: -1; /* Фон ниже текста */
+    /* Параметры фона */
+    background: url(https://lh3.googleusercontent.com/vLno7Z2u8nZJNV1J_RmdTUSWDU8qs6oLIq2BVDe68vo2kOZHge4YfOZtW1dRFOVDq-2M=s85) center / cover no-repeat;
+    filter: blur(20px); /* Размытие */
+    
+}
+        
+                </style>
+</head>
+<body>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="https://lh3.googleusercontent.com/ZUJH_J8TpQR9WZDB6kqUWHZvRQuRrqRjrjwAeAaKBREz1D_kSemY1Z6SnGHFqiqMbfC-9og=s85" viewBox="0 0 512 512">
+          <path fill="currentColor"
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+          </path>
+        </svg>
+      </div>
+      <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <div id="header">
+            <img src="https://lh3.googleusercontent.com/ZUJH_J8TpQR9WZDB6kqUWHZvRQuRrqRjrjwAeAaKBREz1D_kSemY1Z6SnGHFqiqMbfC-9og=s85">
+          
+       <a class="navbar-brand" href="#">Главная</a> </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="page/catalogue.html">Каталог</a>
+                <a class="nav-item nav-link" href="page/contacts.html">Контакты</a>
+            </div>
+        </div>
+    </nav>
+    <a class="navbar-brand" href="#">Главная</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="page/catalogue.html">Каталог</a>
+            <a class="nav-item nav-link" href="page/contacts.html">Контакты</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+   
+    <div class="background">
+        <div class="blur"></div>
+      </div>
+      
+      
+    <div class="col-xs-12 visible-xs visible-sm">
+        <br></br>
+        <br>
+        <h1 style="color: #070101"> MusicMaker</h1>
+        <img src="https://denn-pro.ru/upload/iblock/6f5/6f5ef7f4e41711c4f4ad3a583b0b5fab.jpg" width="300" height="300" style="float: left; margin-right: 15px">
+        <h3 style="color: #070101">Музыкальный магазин MusicMaker предлагает Вам широкий выбор музыкальных инструментов, для новичков и профессионалов! Звуковое и световое оборудование для клубов, баров, ресторанов инсталляционные проекты для торговых и развлекательных центров. Мы предоставляем профессиональное звуковое оборудование для студий звукозаписи и репетиционных точек. У нас Вы можете приобрести: гитары, клавишные, духовые, ударные, смычковые инструменты и многие др., таких популярных брендов как Yamaha, Casio, Cort, Korg, Shure, Behringer, Fender, Epiphone, Ibanez, JBL, Marshall и т.д. Каждый наш покупатель найдет для себя не только инструмент или оборудование, но и аксессуары к нему: стойки, чехлы, кабеля, средства по уходу и т.д.</h3>
+        <br>
+
+        <img src="https://musicalive.ru/upload/iblock/996/novation_launchpad_mini_mk2_4.jpg" width="350" height="300" style="float: left; margin-right: 15px">
+        <h3 style="color: #070101">Мы предоставляем услуги:<br>
+            - Розничных и оптовых продаж<br>
+            - Услуги доставки<br>
+            - Работа с дилерами<br>
+            - Доставка инструментов и оборудования «под заказ»<br>
+            - Инсталяция звукового и светового оборудования в клубах, барах, ресторанах, торговых центрах и др.<br>
+            - Техническое обеспечение массовых мероприятий, концертов, презентаций, свадеб, дискотек и др.</h3>
+    <br><br>
+        
+    </div>
+    </div>
+   </div>
+    
+</div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

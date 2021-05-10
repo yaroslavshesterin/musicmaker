@@ -1,0 +1,473 @@
+body {
+    font-family: 'Nerko One', cursive;
+}
+a:hover{
+    text-decoration: none;
+}
+.head-index{
+text-align: center;
+}
+.content{
+    display: flex;
+    justify-content: left;/* Выравнивание по ценрту */
+    margin-bottom: 30px;
+}
+.text-index p{
+    margin-top: 33px;
+    margin-left: 51px;
+    font-size: 32px;
+}
+.photo-index img{
+    width: 300px;
+    height: 400px;
+}
+.text-index{
+    width: 600px;
+}
+.text-index-2 h1{
+    text-align: center;
+    color: #070111; 
+     font-size: 250%;    /* Размер шрифта в процентах */ 
+       
+}
+.text-index-2 h2{
+    text-align: center;
+    color: #070111; 
+         /* Размер шрифта в процентах */ 
+       
+}
+.text-index-2 h3{
+    text-align: center;
+    color: #070111; 
+         /* Размер шрифта в процентах */ 
+       
+}
+.text-index-2 p{
+    margin-top: 33px;
+    margin-right: 51px;
+    font-size: 32px;
+    color: #070111; 
+}
+.text-index-2{
+    width: 600px;
+}
+.head-index{
+    margin-top: 20px;
+}
+.photo-index-2 img{
+    width: 350px;
+    height: 400px;
+}
+.mt-10{
+    margin-top: 50px;
+}
+
+.h1-tvor{
+    text-align: center;
+    margin: 20px 0;
+}
+.tvor{
+    display: flex;
+}
+.tvor img{
+    width: 540px;
+    height: 315px;
+    position: relative;
+    left: 20px;
+}
+.h1-tvor span{
+    font-size: 22px;
+}
+.fix{
+    margin-top: 65px;
+}
+.bio-h1{
+    text-align: center;
+}
+.table-bio h1{
+    text-align: center;
+    margin-top: 50px;
+}
+table{
+    text-align: center;
+}
+.center{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.inst 
+{display:inline-block;
+    vertical-align:bottom;
+    width:24px;height:24px;
+    margin:0 20px 0px 0;
+    padding:0;
+    outline:none;
+    background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1024px-Instagram_logo.svg.png) -96px 0 no-repeat
+}
+HTML SCSS JSResult Skip Results Iframe
+EDIT ON
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    }
+    
+    #header{
+    position: relative;
+    
+    }
+    
+    .preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        /* фоновый цвет */
+        background: #e0e0e0;
+        z-index: 1001;
+      }
+      
+      .preloader__image {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        margin-top: -35px;
+        margin-left: -35px;
+        text-align: center;
+        animation: preloader-rotate 2s infinite linear;
+      }
+      
+      @keyframes preloader-rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      .loaded_hiding .preloader {
+        transition: 0.3s opacity;
+        opacity: 0;
+      }
+      
+      .loaded .preloader {
+        display: none;
+      }
+      
+      
+       
+     
+     .product-wrap {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        background:grey;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Lora;
+        text-transform: uppercase;
+     }
+     .product-item {
+        position: relative;
+        overflow: hidden;
+     }
+     .product-wrap img {
+        display: block;
+        width: 100%;
+     }
+     .product-buttons {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .8);
+        opacity: 0;
+        transition: .3s ease-in-out;
+     }
+     .button {
+        text-decoration: none;
+        color: #c0a97a;
+        font-size: 12px;
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 2px solid #c0a97a;
+        transform: translate(-50%, -50%) scale(0);
+        transition: .3s ease-in-out;
+     }
+     .button:before {
+        content: "\f07a";
+        font-family: FontAwesome;
+        margin-right: 10px;
+     }
+     .product-item:hover .product-buttons {
+        opacity: 1;
+     }
+     .product-item:hover .button {
+        transform: translate(-50%, -50%) scale(1);
+     }
+     .button:hover {
+        background: black;
+     }
+     .product-title {
+        color: #5e5e5e;
+     }
+     .product-title a {
+        text-decoration: none;
+        color: #2e2e2e;
+        font-weight: 600;
+        margin: 15px 0 5px;
+        padding-bottom: 7px;
+        display: block;
+        position: relative;
+        transition: .3s ease-in-out;
+     }
+     .product-title a:after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background: #2e2e2e;
+        left: 50%;
+        margin-left: -20px;
+        bottom: 0;
+        transition: .3s ease-in-out;
+     }
+     .product-title a:hover {
+        color: #c0a97a;
+     }
+     .product-title:hover a:after {
+        background: #c0a97a;
+     }
+     .product-price {
+        font-size: 20px;
+        color: #c0a97a;
+        font-weight: 700;
+     }
+     .shopping-cart {
+        width: 750px;
+        height: 423px;
+        margin: 80px auto;
+        background: #FFFFFF;
+        box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+        border-radius: 6px;
+       
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+        height: 60px;
+        border-bottom: 1px solid #E1E8EE;
+        padding: 20px 30px;
+        color: #5E6977;
+        font-size: 18px;
+        font-weight: 400;
+      }
+       
+      .item {
+        padding: 20px 30px;
+        height: 120px;
+        display: flex;
+      }
+       
+      .item:nth-child(3) {
+        border-top:  1px solid #E1E8EE;
+        border-bottom:  1px solid #E1E8EE;
+      }.buttons {
+        position: relative;
+        padding-top: 30px;
+        margin-right: 60px;
+      }
+      .delete-btn,
+      .like-btn {
+        display: inline-block;
+        Cursor: pointer;
+      }
+      .delete-btn {
+        width: 18px;
+        height: 17px;
+        background: url("delete-icn.svg") no-repeat center;
+      }
+       
+      .like-btn {
+        position: absolute;
+        top: 9px;
+        left: 15px;
+        background: url('twitter-heart.png');
+        width: 60px;
+        height: 60px;
+        background-size: 2900%;
+        background-repeat: no-repeat;
+      }.is-active {
+        animation-name: animate;
+        animation-duration: .8s;
+        animation-iteration-count: 1;
+        animation-timing-function: steps(28);
+        animation-fill-mode: forwards;
+      }
+       
+      @keyframes animate {
+        0%   { background-position: left;  }
+        50%  { background-position: right; }
+        100% { background-position: right; }
+      }.image {
+        margin-right: 50px;
+      }
+       
+    
+      .description {
+        padding-top: 10px;
+        margin-right: 60px;
+        width: 115px;
+      }
+       
+      .description span {
+        display: block;
+        font-size: 14px;
+        color: #43484D;
+        font-weight: 400;
+      }
+       
+      .description span:first-child {
+        margin-bottom: 5px;
+      }
+      .description span:last-child {
+        font-weight: 300;
+        margin-top: 8px;
+        color: #86939E;
+      }
+      .quantity {
+        padding-top: 20px;
+        margin-right: 60px;
+      }
+      .quantity input {
+        -webkit-appearance: none;
+        border: none;
+        text-align: center;
+        width: 32px;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: 300;
+      }
+       
+      button[class*=btn] {
+        width: 30px;
+        height: 30px;
+        background-color: #E1E8EE;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+      }
+      .minus-btn img {
+        margin-bottom: 3px;
+      }
+      .plus-btn img {
+        margin-top: 2px;
+      }
+       
+      button:focus,
+      input:focus {
+        outline:0;
+      }
+      .total-price {
+        width: 83px;
+        padding-top: 27px;
+        text-align: center;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: 300;
+      }
+      @media (max-width: 800px) {
+        .shopping-cart {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+        }
+        .item {
+          height: auto;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .image img {
+          width: 50%;
+        }
+        .image,
+        .quantity,
+        .description {
+          width: 100%;
+          text-align: center;
+          margin: 6px 0;
+        }
+        .buttons {
+          margin-right: 20px;
+        }
+      }
+      .leftimg {
+        float:none;
+        text-align: center; /* Выравнивание по левому краю */
+        margin: 20%; /* Отступы вокруг картинки */
+   }
+   body::before {
+    content: '';
+    position: fixed; /* Фиксируем на одном месте */
+    left: 0; right: 0; /* Вся ширин */
+    top: 0; bottom: 0; /* Вся высота */
+    z-index: -1; /* Фон ниже текста */
+    /* Параметры фона */
+    background: url(https://lh3.googleusercontent.com/vLno7Z2u8nZJNV1J_RmdTUSWDU8qs6oLIq2BVDe68vo2kOZHge4YfOZtW1dRFOVDq-2M=s85) center / cover no-repeat;
+    filter: blur(20px); /* Размытие */
+    
+}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  float: right;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+  border-radius: 24px;
+ 
+  padding: 100px;
+  color: #000;
+    text-transform: uppercase;
+text-decoration: none;
+margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+body::before {
+  content: '';
+  position: fixed; /* Фиксируем на одном месте */
+  left: 0; right: 0; /* Вся ширин */
+  top: 0; bottom: 0; /* Вся высота */
+  z-index: -1; /* Фон ниже текста */
+  /* Параметры фона */
+  background: url(https://lh3.googleusercontent.com/vLno7Z2u8nZJNV1J_RmdTUSWDU8qs6oLIq2BVDe68vo2kOZHge4YfOZtW1dRFOVDq-2M=s85) center / cover no-repeat;
+  filter: blur(20px); /* Размытие */
+  
+}
+.product-wrap{
+position: static;
+}
+.instagram a:hover {background-image:url(https://lumpics.ru/wp-content/uploads/2017/01/Kak-zaregistrirovatsya-v-Instagram.png); background-image:url(https://img.icons8.com/carbon-copy/2x/instagram-new.png)}
